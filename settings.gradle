@@ -1,0 +1,3 @@
+include ':utilslibrary'
+include ':demo'
+rootProject.name = "utils"
