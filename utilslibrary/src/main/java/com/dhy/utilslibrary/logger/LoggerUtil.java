@@ -395,14 +395,11 @@ public final class LoggerUtil {
 
             fileLogger.checkLogFile();
 
-            taskLogList.add(new Runnable() {
-                @Override
-                public void run() {
-                    setLowThreadPriority();
+            taskLogList.add(() -> {
+                setLowThreadPriority();
 
-                    fileLogger.createLogFile();
-                    fileLogger.write(tag, now, currentThreadName, msg, params);
-                }
+                fileLogger.createLogFile();
+                fileLogger.write(tag, now, currentThreadName, msg, params);
             });
             notifyLock();
         }
@@ -421,16 +418,13 @@ public final class LoggerUtil {
         }
 
         private void initThread() {
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    setLowThreadPriority();
-                    while (true) {
-                        try {
-                            executeTask();
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
+            new Thread(() -> {
+                setLowThreadPriority();
+                while (true) {
+                    try {
+                        executeTask();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
                     }
                 }
             }, "LoggerThread").start();
