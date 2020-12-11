@@ -73,6 +73,10 @@
 
 ​	AppVersionUtil：获取版本号，版本名称，
 
+#### 15.ratingstar 星星评分
+
+​	DRatingStar：支持自定义属性见attrs中的RatingBar
+
 
 
 

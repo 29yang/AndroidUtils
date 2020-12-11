@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatingBar">
+        <!--星星间距 默认0-->
+        <attr name="RatingBar_starDistance" format="dimension" />
+        <!--星星点亮的个数 默认0-->
+        <attr name="RatingBar_starScore" format="float" />
+        <!--星星总数 默认5-->
+        <attr name="RatingBar_starCount" format="integer" />
+        <!--暗星星资源 必须填写-->
+        <attr name="RatingBar_starEmpty" format="reference" />
+        <!--亮星星资源 必须填写-->
+        <attr name="RatingBar_starFill" format="reference" />
+        <!--点亮星星的 步数 0.1~ 1.0 之间 默认0.1-->
+        <attr name="RatingBar_starStep" format="float" />
+        <!--是否支持点击或滑动改变星级 默认关闭-->
+        <attr name="RatingBar_starTouchable" format="boolean" />
+    </declare-styleable>
+</resources>
