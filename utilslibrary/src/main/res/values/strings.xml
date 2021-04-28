@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">avp</string>
+    <string name="bar_title">Automatic Valet Parking</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    parking-->
+    <string name="parking_fail_bg">Parking Activate Failed:\nCannot connect with your car, plaese try again.</string>
+    <string name="parking_start">Parking Start</string>
+    <string name="parking_in">Your car begin parking in.</string>
+    <string name="parking_out">Your car begin parking out.</string>
+    <string name="parking_in_suc">Parking successfully !</string>
+    <string name="parking_out_suc">Calling successfully !</string>
+    <string name="parking_out_suc_notice">Your car arrived，Please get in</string>
+    <string name="position">Position:</string>
+    <string name="finish_time">FinishTime:</string>
+    <string name="done">Done(%1$ss)</string>
+    <string name="end_dialog_content">Do you want to end the\nAVP service?</string>
+    <string name="emergency_stop">Emergency Stop</string>
+
+    <!--calling-->
+    <string name="calling_start">Calling Start</string>
+    <string name="vehicle_state">Vehicle State</string>
+    <string name="not_found">Not Found</string>
+
+
+    <string name="exit_app">Press again to exit the app</string>
+</resources>

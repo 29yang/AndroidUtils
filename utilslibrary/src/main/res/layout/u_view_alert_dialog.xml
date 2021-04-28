@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lLayout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/u_dialog_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="400dp"
+            android:layout_height="1px"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:text="标题"
+            android:textAllCaps="false"
+            android:textColor="#0000"
+            android:textSize="58px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/txt_iv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/suc_blue_icon" />
+
+        <TextView
+            android:id="@+id/txt_msg"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23.5dp"
+            android:layout_marginBottom="13dp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/end_dialog_content"
+            android:textAllCaps="false"
+            android:textColor="#999999"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_e8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_neg"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/u_alert_dialog_left_selector"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black_9"
+                android:textSize="23sp" />
+
+            <ImageView
+                android:id="@+id/img_line"
+                android:layout_width="1dp"
+                android:layout_height="60dp"
+                android:background="@color/black_e8" />
+
+            <Button
+                android:id="@+id/btn_pos"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/u_alert_dialog_right_selector"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/parking_suc"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

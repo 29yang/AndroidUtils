@@ -76,9 +76,11 @@
 #### 15.ratingstar 星星评分
 
 ​	DRatingStar：支持自定义属性见attrs中的RatingBar
+#### 16.media 一些简易的播放类
 
+#### 17.dialog 一些简易的弹出框
 
-
+#### 18.bitmap 一些文字 view 转bitmap
 
 
 
